@@ -6,15 +6,15 @@
  * Time: 11:04 AM
  */
 namespace App\Http\Controllers;
-use App\Branch;
+use App\Bankbranch;
 
 
 class BranchController extends Controller
 {
     public  function AllBranch()
     {
-        $Branch= Branch::all();
-         return view('welcome',['branch'=>$Branch]);
+        $Branch= Bankbranch::all();
+        return view('welcome',['branch'=>$Branch]);
          //
     }
 

@@ -101,15 +101,7 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                         @foreach($branch as $post)
-                                             <tr>
-                                                 <td>{{$post->branch}}</td>
-                                                 <td>{{$post->branch}}</td>
-                                                <td>{{$post->address}}</td>
-                                                <td>{{$post->contact1}}</td>
-                                                <td>{{$post->contact2}}</td>
-                                             </tr>
-                                         @endforeach
+
                                         </tbody>
                                         <tfoot>
 
@@ -118,7 +110,15 @@
                                 </div>
                             </div>
                         </div>
-
+                        @foreach($branchws as $post)
+                            <tr>
+                                <td>{{$post->branch}}</td>
+                                <td>{{$post->branch}}</td>
+                                <td>{{$post->address}}</td>
+                                <td>{{$post->contact1}}</td>
+                                <td>{{$post->contact2}}</td>
+                            </tr>
+                        @endforeach
                     </div>
                     <div class="row">
                         <div class="col-md-12">
