@@ -7,6 +7,7 @@
  */
 namespace App\Http\Controllers;
 use App\Branch;
+use App\Item;
 
 
 class BranchController extends Controller
@@ -14,7 +15,8 @@ class BranchController extends Controller
     public  function AllBranch()
     {
         $branch= Branch::all();
-        return view('welcome',['branch'=>$branch]);
+        $Item= Item::all();
+        return view('welcome',['branch'=>$branch,'items'=>$Item,]);
          //
     }
 

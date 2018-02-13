@@ -24,6 +24,8 @@
 
 </head>
 <body class="hold-transition skin-blue layout-top-nav">
+
+
     @yield('content')
 
 
