@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="{{URL::to('Staticfiles/bower_components/font-awesome/css/font-awesome.min.css')}}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{URL::to('Staticfiles/bower_components/Ionicons/css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{URL::to('Staticfiles/bower_components/select2/dist/css/select2.min.css')}}">
+
+    select2.min.css
     <!-- Theme style -->
     <link rel="stylesheet" href="{{URL::to('Staticfiles/dist/css/AdminLTE.min.css')}}">
     <link rel="stylesheet" href="{{URL::to('Staticfiles/dist/css/skins/_all-skins.min.css')}}">
@@ -39,7 +42,8 @@
 <!-- SlimScroll -->
 <script src="{{URL::to('Staticfiles/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 <script src="{{URL::to('Staticfiles/bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{URL::to('Staticfiles/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
+    <script src="{{URL::to('Staticfiles/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
+    <script src="{{URL::to('Staticfiles/bower_components/select2/dist/js/select2.full.min.js')}}"></script>
 <!-- FastClick -->
 <script src="{{URL::to('Staticfiles/bower_components/fastclick/lib/fastclick.js')}}"></script>
 <!-- AdminLTE App -->

@@ -42,4 +42,12 @@ Route::group(['middleware' => ['web']], function () {
         return view('orderform');
     });
 
+    Route::post('/addproduct', [
+        //view('orderform');
+        'uses' => 'ItemController@addproduct',
+        'as' => 'addproduct'
+    ]);
+
+
+
 });

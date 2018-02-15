@@ -17,7 +17,12 @@ class BranchController extends Controller
         $branch= Branch::all();
         $Item= Item::all();
         return view('welcome',['branch'=>$branch,'items'=>$Item,]);
-         //
+    }
+    public  function AddBranch()
+    {
+        $branch= Branch::all();
+        $Item= Item::all();
+        return view('welcome',['branch'=>$branch,'items'=>$Item,]);
     }
 
 }
