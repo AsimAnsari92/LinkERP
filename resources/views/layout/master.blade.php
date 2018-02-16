@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="{{URL::to('Staticfiles/bower_components/font-awesome/css/font-awesome.min.css')}}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{URL::to('Staticfiles/bower_components/Ionicons/css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{URL::to('Staticfiles/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
+    <link rel="stylesheet" href="{{URL::to('Staticfiles/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
     <link rel="stylesheet" href="{{URL::to('Staticfiles/bower_components/select2/dist/css/select2.min.css')}}">
-
-    select2.min.css
     <!-- Theme style -->
+
     <link rel="stylesheet" href="{{URL::to('Staticfiles/dist/css/AdminLTE.min.css')}}">
     <link rel="stylesheet" href="{{URL::to('Staticfiles/dist/css/skins/_all-skins.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{URL::to('Staticfiles/dist/css/style.css')}}">
@@ -36,21 +37,31 @@
 
 
 
-<script src="{{URL::to('Staticfiles/bower_components/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{URL::to('Staticfiles/bower_components/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{URL::to('Staticfiles/bower_components/select2/dist/js/select2.full.min.js')}}"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="{{URL::to('Staticfiles/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+
+    <script src="{{URL::to('Staticfiles/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <!-- SlimScroll -->
 <script src="{{URL::to('Staticfiles/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 <script src="{{URL::to('Staticfiles/bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
-    <script src="{{URL::to('Staticfiles/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
-    <script src="{{URL::to('Staticfiles/bower_components/select2/dist/js/select2.full.min.js')}}"></script>
+<script src="{{URL::to('Staticfiles/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
 <!-- FastClick -->
 <script src="{{URL::to('Staticfiles/bower_components/fastclick/lib/fastclick.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{URL::to('Staticfiles/dist/js/adminlte.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{URL::to('Staticfiles/dist/js/demo.js')}}"></script>
+
+
+    <script src="{{URL::to('Staticfiles/bower_components/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
+    <script src="{{URL::to('Staticfiles/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
+
+
+
 <script>
+    $('.select2').select2();
+
     $('#example1').DataTable({
         'paging'      : true,
         'lengthChange': true,
@@ -69,6 +80,11 @@
         'autoWidth'   : true,
         "bInfo": false
      });
+
+    $('.datepicker').datepicker({
+        autoclose: true
+    })
+
 </script>
 </body>
 </html>
