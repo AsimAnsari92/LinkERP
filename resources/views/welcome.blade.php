@@ -74,15 +74,15 @@
 
         <div class="form-group">
             <label for="exampleInputPassword1">Branch Name</label>
-            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-                <option>California</option>
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-            </select>
+<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+    <option selected="selected">Alabama</option>
+    <option>Alaska</option>
+    <option>California</option>
+    <option>Delaware</option>
+    <option>Tennessee</option>
+    <option>Texas</option>
+    <option>Washington</option>
+</select>
          </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Item Name</label>
